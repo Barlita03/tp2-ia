@@ -1,0 +1,11 @@
+entrenamiento,clase,precision_train,recall_train,f1_train,precision_test,recall_test,f1_test,soporte_test
+Entrenamiento_5_CNN_2Capas_Fino,Agaricus_campestris,61.57%,88.17%,72.51%,52.70%,69.64%,60.00%,56
+Entrenamiento_5_CNN_2Capas_Fino,Aleuria_aurantia,96.22%,78.76%,86.62%,90.48%,76.00%,82.61%,75
+Entrenamiento_5_CNN_2Capas_Fino,Amanita_muscaria,87.93%,70.18%,78.06%,75.47%,54.79%,63.49%,73
+Entrenamiento_5_CNN_2Capas_Fino,Amanita_pantherina,53.05%,39.55%,45.31%,53.85%,47.30%,50.36%,74
+Entrenamiento_5_CNN_2Capas_Fino,Boletus_edulis,63.37%,55.17%,58.99%,37.68%,33.77%,35.62%,77
+Entrenamiento_5_CNN_2Capas_Fino,Cantharellus_cibarius,62.80%,93.78%,75.22%,59.13%,90.67%,71.58%,75
+Entrenamiento_5_CNN_2Capas_Fino,Cortinarius_violaceus,96.86%,71.98%,82.59%,87.84%,75.58%,81.25%,86
+Entrenamiento_5_CNN_2Capas_Fino,Lactarius_indigo,90.64%,65.96%,76.35%,85.71%,46.15%,60.00%,78
+Entrenamiento_5_CNN_2Capas_Fino,Pleurotus_ostreatus,56.50%,71.65%,63.18%,52.05%,59.38%,55.47%,64
+Entrenamiento_5_CNN_2Capas_Fino,Stropharia_aeruginosa,65.86%,81.95%,73.03%,54.62%,73.03%,62.50%,89

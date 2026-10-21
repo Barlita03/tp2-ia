@@ -1,0 +1,11 @@
+entrenamiento,clase,precision_train,recall_train,f1_train,precision_test,recall_test,f1_test,soporte_test
+Entrenamiento_2_CNN_1Capa,Agaricus_campestris,21.17%,17.16%,18.95%,22.50%,16.07%,18.75%,56
+Entrenamiento_2_CNN_1Capa,Aleuria_aurantia,60.92%,87.61%,71.87%,54.24%,85.33%,66.32%,75
+Entrenamiento_2_CNN_1Capa,Amanita_muscaria,31.18%,37.61%,34.10%,31.17%,32.88%,32.00%,73
+Entrenamiento_2_CNN_1Capa,Amanita_pantherina,23.63%,19.55%,21.39%,32.84%,29.73%,31.21%,74
+Entrenamiento_2_CNN_1Capa,Boletus_edulis,32.76%,24.57%,28.08%,29.63%,20.78%,24.43%,77
+Entrenamiento_2_CNN_1Capa,Cantharellus_cibarius,68.60%,63.11%,65.74%,59.42%,54.67%,56.94%,75
+Entrenamiento_2_CNN_1Capa,Cortinarius_violaceus,39.22%,23.35%,29.27%,29.82%,19.77%,23.78%,86
+Entrenamiento_2_CNN_1Capa,Lactarius_indigo,28.44%,92.34%,43.49%,28.69%,92.31%,43.77%,78
+Entrenamiento_2_CNN_1Capa,Pleurotus_ostreatus,50.00%,3.61%,6.73%,33.33%,1.56%,2.99%,64
+Entrenamiento_2_CNN_1Capa,Stropharia_aeruginosa,25.00%,2.26%,4.14%,27.27%,3.37%,6.00%,89
