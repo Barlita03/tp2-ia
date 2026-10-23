@@ -4,6 +4,28 @@
 
 ---
 
+## ✅ Versión final (entrega)
+
+La versión final del trabajo es la del notebook de Keras/TensorFlow en `06_Notebook/` y el informe **v3** en `01_Entregables/`. Los experimentos con PyTorch de `04_Codigo/` y `05_Resultados_Graficos/` (y el informe v2) corresponden a una versión anterior.
+
+- `06_Notebook/TP2_Clasificacion_Hongos_RNA.ipynb`: notebook ejecutado, con todas las salidas.
+- `06_Notebook/para_colab/`: el mismo notebook sin salidas, la versión subida al Colab del grupo.
+- `06_Notebook/resultados/` (y `resultados.zip`): figuras y `resumen.json` con todas las métricas.
+- `06_Notebook/datos.zip`: conjuntos de entrenamiento, validación y prueba en JPG (128 x 128).
+- `01_Entregables/Entrega Final - TP°2 - Sistemas Inteligentes - Grupo 9 - v3.docx` (y `.pdf`): informe final.
+
+Resultados sobre el conjunto de prueba (809 imágenes, 10 especies), con TensorFlow 2.21 en modo determinista sobre una RTX 3060:
+
+| Modelo | Pesos | Exactitud validación | Exactitud prueba | F1 macro prueba |
+|:---|---:|---:|---:|---:|
+| Perceptrón Multicapa (BP) | 12.617.354 | 37,4% | 36,1% | 34,4% |
+| CNN 1 capa convolucional | 16.259.338 | 51,9% | 51,2% | 51,2% |
+| **CNN 2 capas convolucionales (elegida)** | **3.708.074** | **54,3%** | **51,3%** | **51,4%** |
+
+Para reproducirlo, abrir el notebook en Google Colab con GPU y ejecutar todas las celdas: descarga el dataset solo.
+
+---
+
 ## 📁 Estructura del Proyecto
 
 El repositorio está organizado en carpetas numeradas para que encuentres fácilmente cada componente:
@@ -12,6 +34,7 @@ El repositorio está organizado en carpetas numeradas para que encuentres fácil
 TP2/
 │
 ├── 01_Entregables/                 # Documentos finales listos para presentar o revisar
+│   ├── Entrega Final - TP°2 - Sistemas Inteligentes - Grupo 9 - v3.docx / .pdf  # Informe final
 │   ├── Entrega Final - TP°2 - Sistemas Inteligentes - Grupo 9 - v2.docx
 │   ├── Entrega Parcial - TP°2 - Sistemas Inteligentes - Grupo 9 - Hongos - v2.docx
 │   └── dataset_analisis.md
@@ -42,13 +65,19 @@ TP2/
 │   ├── ejemplos_informe/           # Fotos representativas de especies para los informes
 │   └── resultados_entrenamientos/  # Gráficos de Loss/Acc y matrices de confusión (Train/Test)
 │
+├── 06_Notebook/                    # Versión final: notebook Keras/TensorFlow, resultados y datos
+│   ├── TP2_Clasificacion_Hongos_RNA.ipynb
+│   ├── para_colab/                 # Notebook sin salidas (versión del Colab del grupo)
+│   ├── resultados/, resultados.zip # Figuras y resumen.json
+│   └── datos.zip                   # Conjuntos de entrenamiento, validación y prueba (JPG)
+│
 ├── dataset.zip                     # Archivo comprimido original de Kaggle (2,7 GB)
 └── README.md                       # Esta guía
 ```
 
 ---
 
-## 🚀 Modelos Evaluados y Resultados Principales
+## 🚀 Modelos Evaluados y Resultados Principales (versión anterior, PyTorch)
 
 Todos los modelos fueron entrenados con **PyTorch 2.11 + CUDA (GPU RTX 3060 12GB)** bajo semilla fija (`seed=42`), función de costo **Cross-Entropy ponderada por pesos inversos a la frecuencia de clase** y partición estratificada **60% entrenamiento / 20% validación / 20% prueba**:
 
@@ -85,5 +114,6 @@ python 04_Codigo\generar_entrega_final_v2.py
 
 ## 📄 Documentos Listos para Entrega
 Los archivos terminados se ubican en `01_Entregables/`:
+- `Entrega Final - TP°2 - Sistemas Inteligentes - Grupo 9 - v3.docx` (y `.pdf`): **informe final**, con los resultados del notebook de `06_Notebook/`.
 - `Entrega Parcial - TP°2 - Sistemas Inteligentes - Grupo 9 - Hongos - v2.docx`: Contiene los placeholders completados con números reales, corrección sobre filtros crecientes y aclaración respecto al Anexo de la cátedra.
 - `Entrega Final - TP°2 - Sistemas Inteligentes - Grupo 9 - v2.docx`: Informe completo con Introducción, Metodología, Resultados experimentales (tablas y gráficos incrustados), Discusión exhaustiva de las 3 preguntas de la cátedra, Conclusiones y Referencias bibliográficas en formato IEEE.
